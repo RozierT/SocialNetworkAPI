@@ -7,11 +7,11 @@ const userSchema = new mongoose.Schema({
         unique: true,
         trim:true
     },
-    email: {
+    id: {
         type: String,
         required: true,
         unique: true,
-        match: [/.+@.+\..+/]
+        trim:true
     },
     thoughts: [
         {
